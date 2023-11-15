@@ -1,8 +1,8 @@
 # Git Merges
 
-Git provides tools to assist bringing independently-made
-changes together into a coherent assembly of the work. Different
-work does not become a collaboration until it is brought together and
+Git tries to make it easier to bring independently-made
+changes together into a unified view. Different work does
+not become a collaboration until it is brought together and
 polished so it fits together nicely.
 
 
@@ -11,6 +11,12 @@ polished so it fits together nicely.
 One way to merge is to find a common ancestor and compare
 the file with the smaller changes to the ancestor using
 'diff'.
+
+The output from 'diff' can then be given to another
+program named 'patch' that will try to recreate those changes
+even if the base file has changed a bit. The patch is applied
+to the file with the bigger changes. The result is a dumb
+but effective way of combining both sets of changes.
 
 
 ## The Old Ways
